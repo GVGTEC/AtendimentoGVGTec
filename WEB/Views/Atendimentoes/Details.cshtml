@@ -1,0 +1,82 @@
+﻿@model DAL.MODEL.Atendimento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Atendimento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClienteX.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClienteX.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeSolicitante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeSolicitante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CobrarServico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CobrarServico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ValorServico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ValorServico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TempoServico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TempoServico)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
