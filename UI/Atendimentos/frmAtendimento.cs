@@ -34,7 +34,7 @@ namespace UI
         //decimal precototal = 0;
         decimal valortotal = 0;
 
-        static string arquivovendasini = @"C:\SAT\VENDA.INI";
+        static string arquivovendasini = @"C:\SAT\VENDA.INI*";
         static string arquivoentrada = @"C:\SAT\ENT.TXT";
         static string linhavendasini;
         static string achou;
